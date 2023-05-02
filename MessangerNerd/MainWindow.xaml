@@ -1,0 +1,30 @@
+﻿<Window x:Class="MessangerNerd.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MessangerNerd"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+       >
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="pictures/NerdsForMessanger.jpg" Stretch="UniformToFill" />
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="117*"/>
+            <RowDefinition Height="81*"/>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="98*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="NameText" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="" Background="DarkSlateGray" Foreground="white" FontSize="27" VerticalAlignment="Center" Width="748" Height="61" Grid.Row="1"/>
+        <TextBox x:Name="IPText" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="IP" Background="DarkSlateGray" Foreground="white" FontSize="27" VerticalAlignment="Top" Width="748" Height="61" Grid.Row="4" Margin="0,10,0,0"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Добро пожаловать в сетевой чат NERD" TextAlignment="Center" FontWeight="Bold" FontSize="35" VerticalAlignment="Center" Width="582" Foreground="Black" Height="94"/>
+        <Button x:Name="CreateChat1" Content="Создать новый чат" HorizontalAlignment="Center" Margin="0,10,0,0" Background="Goldenrod" Grid.Row="2" FontSize="25" VerticalAlignment="Top" Width="748" Height="53" Click="CreateChat"/>
+        <Button x:Name="Connect2" Content="Я хочу подключиться" HorizontalAlignment="Center" Margin="0,6,0,0" Background="Goldenrod" Grid.Row="3" FontSize="25" VerticalAlignment="Top" Width="748" Height="53" Click="Connect"/>
+    </Grid>
+</Window>
